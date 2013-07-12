@@ -22,8 +22,8 @@ Given the following Markdown file:
 
 ...the resulting MetaMarkdown object will look like this:
 
-$metaMarkdown->title; // My First Article
-$metaMarkdown->author; // Adam Wathan
-$metaMarkdown->date; // 2013-07-11
+	$metaMarkdown->title; // My First Article
+	$metaMarkdown->author; // Adam Wathan
+	$metaMarkdown->date; // 2013-07-11
 
-$metaMarkdown->html; // the compiled HTML
+	$metaMarkdown->html; // the compiled HTML
