@@ -2,7 +2,7 @@
 
 namespace AdamWathan\MetaMarkdown;
 
-use dflydev\markdown\MarkdownParser;
+use \Michelf\MarkdownExtra;
 
 class MetaMarkdown
 {
@@ -48,7 +48,6 @@ class MetaMarkdown
 
 	private function compileHTML()
 	{
-		$markdown = new MarkdownParser();
-		$this->html = $markdown->transformMarkdown($this->raw);
+		$this->html = MarkdownExtra::defaultTransform($this->raw);
 	}
 }
